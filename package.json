@@ -32,6 +32,11 @@
     "lint-staged": {
       "src/**/*.{js,json,scss}": "prettier --tab-width 4 --single-quote --trailing-comma all --write"
     },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
   "devDependencies": {
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
